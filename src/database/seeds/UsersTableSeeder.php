@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class UsersSeeder extends Seeder
+class UsersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,20 +16,20 @@ class UsersSeeder extends Seeder
                 'name' => 'Adnan Kicin',
                 'email' => 'adnankicin92@gmail.com',
                 'password' => 'kicin',
-                'email_verified_at' => \Carbon\Carbon::now(),
+                'email_verified_at' => \Carbon\Carbon::now()
             ],
             [
                 'name' => 'Stefan Poslovi',
                 'email' => 'steve@jobs.io',
                 'password' => 'kicin',
-                'email_verified_at' => \Carbon\Carbon::now(),
+                'email_verified_at' => \Carbon\Carbon::now()
             ],
             [
                 'name' => 'Bill Kapije',
                 'email' => 'bill@gates.org',
                 'password' => 'kicin',
-                'email_verified_at' => \Carbon\Carbon::now(),
-            ],
+                'email_verified_at' => \Carbon\Carbon::now()
+            ]
         ];
 
         foreach ($users as $user) {
